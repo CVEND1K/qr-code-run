@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розділ 1: Опис системи</title>
+    <link rel="stylesheet" href="style.css"> <!-- Підключення стилів -->
+</head>
+<body>
+
+    <!-- Кнопка налаштувань -->
+    <div class="settings">
+        <button onclick="toggleSettings()">Налаштування</button>
+    </div>
+
+    <!-- Меню налаштувань -->
+    <div id="settingsMenu" class="settings-menu">
+        <h3>Налаштування</h3>
+        <div>
+            <label for="themeSelect">Зміна теми:</label>
+            <select id="themeSelect" onchange="changeTheme(event)">
+                <option value="dark">Темна</option>
+                <option value="light">Світла</option>
+                <option value="blue">Синя</option>
+            </select>
+        </div>
+        <div>
+            <h4>Про автора:</h4>
+            <p>Дипломний проєкт був створений студентом кафедри комп'ютерних наук. <br>Контакти: </p>
+            <ul>
+                <li><a href="https://github.com/CVEND1K" target="_blank">Github</a></li>
+                <li><a href="https://www.youtube.com/@ІлляОнешко" target="_blank">Youtube</a></li>
+                <li><a href="mailto:cer.pop.ty@gmail.com">Gmail</a></li>
+            </ul>
+        </div>
+        <button onclick="toggleSettings()">Закрити</button>
+    </div>
+
+    <header>
+        <h1>Розділ 1: Опис системи</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="section2.html">Розділ 2</a></li>
+            <li><a href="section3.html">Розділ 3</a></li>
+        </ul>
+    </nav>
+
+    <section class="intro">
+        <h2>Вступ</h2>
+        <p>У цьому розділі описується загальна архітектура системи...</p>
+
+        <!-- Ілюстрація до проекту -->
+        <img src="images/system_diagram.jpg" alt="Схема системи" width="500">
+
+        <p>Цей розділ містить детальний опис компонентів системи, її основні функції та взаємодію між частинами.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Дипломний проєкт</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Підключення JavaScript -->
+</body>
+</html>

@@ -1,2 +1,45 @@
-# qr-code-run
-Test 1
+# 🚀 QR-CODE RUN
+
+> Сучасна програма для створення, сканування та керування QR-кодами з історією, темами та зручним інтерфейсом.
+
+![QR-CODE RUN banner](code1.png)
+
+---
+
+## 🧩 Основні можливості
+
+- ✅ Створення QR-кодів з будь-якого тексту або посилання
+- 📷 Сканування QR-кодів з камери або зображення
+- 🕓 Збереження історії створених та відсканованих кодів
+- 🎨 Вибір світлої або темної теми оформлення
+- 🖼️ Експорт QR-коду у форматах PNG, JPG
+- 🧠 Інтелектуальна вставка тексту з буфера обміну
+- 🧰 Простий та інтуїтивний інтерфейс на базі `ttkbootstrap`
+
+---
+
+## 🖼️ Інтерфейс
+
+<img src="https://your-image-url.com/screenshot1.png" width="600"/>  
+<img src="https://your-image-url.com/screenshot2.png" width="600"/>
+
+---
+
+## 🛠️ Технології
+
+- `Python 3.10+`
+- `tkinter + ttkbootstrap`
+- `OpenCV` – для сканування з камери
+- `Pillow` – для обробки зображень
+- `qrcode` – генерація QR-кодів
+- `ttkbootstrap` – сучасний UI-дизайн
+
+---
+
+## 🔧 Встановлення
+
+```bash
+git clone https://github.com/yourname/qr-code-run.git
+cd qr-code-run
+pip install -r requirements.txt
+python main.py

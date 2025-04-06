@@ -2,7 +2,7 @@
 
 > Сучасна програма для створення, сканування та керування QR-кодами з історією, темами та зручним інтерфейсом.
 
-![QR-CODE RUN banner](code1.png)
+![QR-CODE RUN banner](images/code1.png)
 
 ---
 
@@ -20,8 +20,7 @@
 
 ## 🖼️ Інтерфейс
 
-<img src="https://your-image-url.com/screenshot1.png" width="600"/>  
-<img src="https://your-image-url.com/screenshot2.png" width="600"/>
+<img src="images/1.png" width="600"/>  
 
 ---
 
@@ -33,13 +32,3 @@
 - `Pillow` – для обробки зображень
 - `qrcode` – генерація QR-кодів
 - `ttkbootstrap` – сучасний UI-дизайн
-
----
-
-## 🔧 Встановлення
-
-```bash
-git clone https://github.com/yourname/qr-code-run.git
-cd qr-code-run
-pip install -r requirements.txt
-python main.py

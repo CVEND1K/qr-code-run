@@ -1,0 +1,488 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2c2c; /* Темний фон */
+    color: white; /* Білий текст */
+    overflow-y: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Фіксований футер */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Заголовок */
+header {
+    background-color: #282c34;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #3a3f4b;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Навігація */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Основний контент */
+section.intro {
+    padding: 30px;
+    background-color: #444;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: calc(100vh - 180px);
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.6; /* Поліпшення читаємості */
+}
+
+/* Опис проекту */
+.project-description {
+    line-height: 1.6;
+    margin-top: 20px;
+    padding: 10px 15px; /* Відступи для красивого вигляду */
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.project-description p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #ccc; /* Світлий колір тексту для контрасту */
+}
+
+.project-description ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.project-description ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+.project-description ul li > strong {
+    font-size: 1.2em;
+    color: #66ccff;
+}
+
+.project-description ul li > ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.project-description ul li > ul li {
+    margin-bottom: 5px;
+}
+
+/* Стили для білої теми */
+body.light {
+    background: linear-gradient(to bottom, #fff5e6, #ffebcc, #ffa64d); /* М'який градієнт */
+    color: #333;
+}
+
+header.light {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+nav ul li a.light {
+    color: #333;
+}
+
+section.intro.light {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer.light {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Стили для синьої теми */
+body.blue {
+    background-color: #001f3d;
+    color: #c0d4f0;
+}
+
+header.blue {
+    background-color: #003366;
+    color: #c0d4f0;
+}
+
+nav ul li a.blue {
+    color: #c0d4f0;
+}
+
+section.intro.blue {
+    background-color: #004080;
+    color: #c0d4f0;
+}
+
+footer.blue {
+    background-color: #003366;
+    color: #c0d4f0;
+}
+
+/* Стили для кнопок */
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Кнопка настройки с иконкой шестерёнки */
+.settings {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.settings button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.settings button img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.settings button img:hover {
+    transform: scale(1.2); /* Збільшення при наведенні */
+}
+
+/* Стили для меню настроек */
+.settings-menu {
+    display: none;
+    position: fixed;
+    top: 65px; /* Вікно налаштувань тепер на 65px від верху */
+    right: 10px;
+    background-color: #444;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    width: 300px;
+    height: auto;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.settings-menu h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #66ccff;
+}
+
+.settings-menu label {
+    font-size: 1.1em;
+    color: white;
+}
+
+.settings-menu select {
+    padding: 5px;
+    font-size: 1.1em;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.settings-menu a {
+    color: #4ca3dd;
+    text-decoration: none;
+}
+
+.settings-menu a:hover {
+    text-decoration: underline;
+}
+
+.settings-menu button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.settings-menu button:hover {
+    background-color: #555;
+}
+
+.settings-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.author-info {
+    margin-top: 1%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.contacts {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contacts-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.contacts-list a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+/* === Головні змінні кольорів === */
+:root {
+    --text-color: black;
+    --background-color: white;
+    --header-footer-bg: #f0f0f0;
+    --button-bg: #ddd;
+    --button-text: black;
+    --accent-color: #007bff;
+}
+
+/* === Темна тема === */
+body.dark {
+    --text-color: #f0f0f0;
+    --background-color: #121212;
+    --header-footer-bg: #1e1e1e;
+    --button-bg: #333;
+    --button-text: white;
+    --accent-color: #4a90e2;
+}
+
+/* === Світла тема === */
+body.light {
+    --text-color: #222;
+    --background-color: #ffffff;
+    --header-footer-bg: #f0f0f0;
+    --button-bg: #ddd;
+    --button-text: black;
+    --accent-color: #007bff;
+}
+
+/* === Синя тема === */
+body.blue {
+    --text-color: #003366;
+    --background-color: #e0f7fa;
+    --header-footer-bg: #007bff;
+    --button-bg: #0056b3;
+    --button-text: white;
+    --accent-color: #ffcc00;
+}
+
+/* === Основні стилі === */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+    color: var(--text-color);
+}
+
+/* === Стилі заголовка та футера === */
+header, footer {
+    background-color: var(--header-footer-bg);
+    color: var(--text-color);
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* === Кнопки === */
+button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* === Випадаюче меню для тем === */
+select {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: 1px solid var(--accent-color);
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* === Посилання === */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+ /* Світла тема */
+.light-theme {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.light-theme .navbar {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.light-theme .btn {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+
+/* Синя тема */
+.blue-theme {
+    background-color: #eaf6ff;
+    color: #1f4e79;
+}
+
+.blue-theme .navbar {
+    background-color: #007bff;
+    color: white;
+}
+
+.blue-theme .btn {
+    background-color: #1f4e79;
+    color: white;
+    border: 1px solid #1f4e79;
+}
+
+.screenshots {
+    margin-left: 0;
+    padding: 10px;
+}
+
+.screenshots-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Выравниваем по центру */
+}
+
+.screenshots-images img {
+    width: 45%;
+    max-width: 300px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* При наведении увеличиваем изображение */
+.screenshots-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

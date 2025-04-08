@@ -259,18 +259,6 @@ button:hover {
     border-radius: 5px;
 }
 
-body.dark {
-    --text-color: white;
-}
-
-body.light {
-    --text-color: black;
-}
-
-body.blue {
-    --text-color: #003366;
-}
-
 .settings-menu button:hover {
     background-color: #555;
 }

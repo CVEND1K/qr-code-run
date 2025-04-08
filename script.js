@@ -90,12 +90,22 @@ function toggleCode(codeId) {
 }
 
 // Показ/приховування скріншотів
-function toggleScreenshot() {
-    const screenshots = document.getElementById("screenshots");
+function toggleScreenshot(id) {
+    const screenshots = document.getElementById(id);
     if (screenshots.style.display === "none" || screenshots.style.display === "") {
         screenshots.style.display = "block";
     } else {
         screenshots.style.display = "none";
+    }
+}
+
+// Універсальна функція для показу/приховування будь-якого блоку за ID
+function toggleVisibility(id) {
+    const block = document.getElementById(id);
+    if (block.style.display === "none" || block.style.display === "") {
+        block.style.display = "block";
+    } else {
+        block.style.display = "none";
     }
 }
 
